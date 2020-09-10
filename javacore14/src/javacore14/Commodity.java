@@ -12,7 +12,7 @@ public class Commodity{
 	private List<Product> listProducts = new ArrayList<>();
 	
 	
-	public static Commodity getCommodity() {
+	public static synchronized Commodity getCommodity() {
 		if (commodity == null) {
 			commodity = new Commodity();
 		}
